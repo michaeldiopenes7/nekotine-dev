@@ -15,9 +15,33 @@ const bebas = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nekotine-dev.vercel.app"),
   title: "Christine Flores | UX/UI Designer",
   description:
     "Portfolio of Christine Flores — aspiring UX/UI designer crafting clean, intentional digital experiences.",
+  openGraph: {
+    title: "Christine Flores | UX/UI Designer",
+    description:
+      "Portfolio of Christine Flores — aspiring UX/UI designer crafting clean, intentional digital experiences.",
+    url: "/",
+    siteName: "Christine Flores",
+    type: "website",
+    images: [
+      {
+        url: "/assets/hero-wide.png",
+        width: 2245,
+        height: 1132,
+        alt: "Christine Flores — UX/UI Designer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Christine Flores | UX/UI Designer",
+    description:
+      "Portfolio of Christine Flores — aspiring UX/UI designer crafting clean, intentional digital experiences.",
+    images: ["/assets/hero-wide.png"],
+  },
 };
 
 export default function RootLayout({
